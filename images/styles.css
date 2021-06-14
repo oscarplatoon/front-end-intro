@@ -1,0 +1,58 @@
+h1{
+    color: red;
+}
+
+#main-heading {
+    color: green;
+    font-size: 80px;
+    background-color: blue;
+}
+
+.article-body {
+    border:solid orange;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 80px);
+}
+
+/* some styles to help us see how the elements are positioned releative to each other. */
+.grid-child {
+  background-color: rgba(0,100,0, .2);
+  border: solid green .5px;
+  padding: 5px;
+}
+
+#one {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+
+#two {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+
+#three {
+  grid-column: 1;
+  grid-row: 5
+}
+
+#four {
+  grid-column: 2;
+  grid-row: 1/6;
+}
+
+#five {
+  grid-column: 3;
+  grid-row: 3/6
+}
